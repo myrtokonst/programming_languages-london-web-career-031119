@@ -37,16 +37,12 @@ languages.each do |style, names|
   if style == :oo
     names.each do |name, info|
     hash[name]= info
-    hash[name][:style] = [:oo]
+    hash[name][:style] = []
+    hash[name][:style].push(style)
 elsif style == :functional
   names.each do |name, info|
     hash[name]= info
-    hash[name][:style] = [:functional]
-elsif style = :oo && :functional
-names.each do |name, info|
-    hash[name]= info
-    hash[name][:style] = [:functional, :oo]
-  end 
+    hash[name][:style].push(style) 
 end
 end
 end
