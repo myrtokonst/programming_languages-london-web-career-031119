@@ -49,6 +49,7 @@ names.each do |name, info|
     hash[name]= info
     hash[name][:style] = [:functional, :oo]
   end 
+end 
 end
 end
 hash
