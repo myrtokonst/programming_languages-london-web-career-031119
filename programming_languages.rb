@@ -41,7 +41,7 @@ languages.each do |style, names|
   end 
 else  names.each do |name, info|
     hash[name]= info
-    hash[name][:style] = [:functional]
+    hash[name][:style].push(style)
 end
 end
 end
