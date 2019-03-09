@@ -34,12 +34,12 @@ languages = {
 def reformat_languages(languages)
   hash = {}
 languages.each do |style, names|
- !hash.has_key?(name)
     names.each do |name, info|
+    if  !hash.has_key?(name)
     hash[name]= info
     hash[name][:style] = []
     hash[name][:style].push(style)
-elsif style == :functional
+else 
   names.each do |name, info|
     hash[name]= info
     hash[name][:style].push(style) 
