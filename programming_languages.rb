@@ -38,18 +38,16 @@ languages.each do |style, names|
     names.each do |name, info|
     hash[name]= info
     hash[name][:style] = [:oo]
-  end 
 elsif style == :functional
   names.each do |name, info|
     hash[name]= info
     hash[name][:style] = [:functional]
-end
-
 elsif style = :oo && :functional
 names.each do |name, info|
     hash[name]= info
     hash[name][:style] = [:functional, :oo]
   end 
+end
 end
 end
 hash
