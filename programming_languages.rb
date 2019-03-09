@@ -39,12 +39,12 @@ languages.each do |style, names|
     hash[name]= info
     hash[name][:style] = [:oo]
   end 
-else style == :functional
+elsif style == :functional
   names.each do |name, info|
     hash[name]= info
     hash[name][:style] = [:functional]
 end
-end
+
 elsif style = :oo && :functional
 names.each do |name, info|
     hash[name]= info
