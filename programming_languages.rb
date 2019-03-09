@@ -43,6 +43,7 @@ elsif style = :oo && :functional
 names.each do |name, info|
     hash[name]= info
     hash[name][:style] = [:functional, :oo]
+  end 
 else names.each do |name, info|
     hash[name]= info
     hash[name][:style] = [:functional]
