@@ -40,8 +40,6 @@ languages.each do |style, names|
     hash[name][:style] = []
     hash[name][:style].push(style)
 else 
-  names.each do |name, info|
-    hash[name]= info
     hash[name][:style].push(style) 
 end
 end
